@@ -1,10 +1,11 @@
+import Home from "./Pages/Home"
 
 function App() {
 
 
   return (
     <>
-      This is a Cinemathic Website
+      <Home/>
     </>
   )
 }
