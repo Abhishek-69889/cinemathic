@@ -5,7 +5,7 @@ const Review = () => {
     <section id="reviews" className="border-t border-black/10 bg-white">
         <div className="max-w-300 mx-auto px-6 py-20">
           <div className="flex justify-between items-end">
-            <div className="text-[11px] uppercase tracking-[0.2em] text-black/40">04 / Reviews</div>
+            <div className=" uppercase tracking-[0.2em] text-yellow-600 text-md ">Words from Students</div>
             <div className="serif text-[18px]">4.9/5 from 800+ students</div>
           </div>
           <div className="mt-8 grid md:grid-cols-2 gap-6">

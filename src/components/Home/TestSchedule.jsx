@@ -1,39 +1,157 @@
-import React, { useState } from 'react'
+// import React, { useState } from "react";
 
-const TestSchedule = () => {
-  const [testLink1, setTestLink1] = useState('https://test.cinemathic.com/weekly-algebra');
-  const [testLink2, setTestLink2] = useState('https://test.cinemathic.com/jee-mock');
-  const [editTest1, setEditTest1] = useState('');
-  const [editTest2, setEditTest2] = useState('');
+const TestShedule = () => {
+  // const [weeklyTest, setWeeklyTest] = useState("");
+  // const [mockTest, setMockTest] = useState("");
 
   return (
-    <section id="tests" className="border-t border-black/10">
-        <div className="max-w-300 mx-auto px-6 py-20">
-          <div className="text-[11px] uppercase tracking-[0.2em] text-black/40">03 / Test Series</div>
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            {[
-              {title:'Weekly Test — Algebra', meta:'30 mins • 20 Qs • Mains Level', link:testLink1, edit:editTest1, setEdit:setEditTest1, setter:setTestLink1},
-              {title:'Full Mock — JEE Pattern', meta:'3 hrs • 75 Qs • Advanced', link:testLink2, edit:editTest2, setEdit:setEditTest2, setter:setTestLink2},
-            ].map((card,i)=>(
-              <div key={i} className="rounded-[20px] border border-black/10 bg-white p-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <div className="serif text-[22px]">{card.title}</div>
-                    <div className="mt-1 text-[12px] text-black/50">{card.meta}</div>
-                  </div>
-                  <span className="text-[10px] uppercase tracking-widest border border-black/10 rounded-full px-2.5 py-1">Active</span>
-                </div>
-                <a href={card.link} target="_blank" className="mt-6 inline-flex bg-black text-white px-5 py-2.5 rounded-full text-[13px] hover:bg-[#2D5BFF] transition">Start Test →</a>
-                <div className="mt-6 flex gap-2">
-                  <input value={card.edit} onChange={e=>card.setEdit(e.target.value)} placeholder="Admin: Paste cloud test link" className="flex-1 h-10 px-4 rounded-full border border-black/10 text-[12px] outline-none" />
-                  <button onClick={()=>{ if(card.edit){ card.setter(card.edit); card.setEdit(''); }}} className="h-10 px-4 rounded-full bg-black text-white text-[12px]">Update</button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-  )
-}
+    <section id="tests" className="">
+      <div className="max-w-305 mx-auto px-5 sm:px-8 lg:px-0 py-14 sm:py-16 lg:py-20">
 
-export default TestSchedule
+
+
+        {/* Test cards */}
+        <div className="mt-10 grid md:grid-cols-2 gap-8">
+
+          {/* Weekly Test */}
+          <div className="border border-black/70 rounded-3xl bg-[#FFFCF5] p-6 sm:p-8">
+
+            <div className="flex justify-between items-center gap-3">
+
+              <div className="text-[10px] sm:text-[11px] uppercase tracking-[0.15em] border border-black/10 bg-white rounded-full px-3 py-1.5">
+                Weekly · 14 Oct
+              </div>
+
+              <div className="text-[9px] uppercase tracking-wider bg-black text-white rounded-full px-3 py-1.5">
+                Intermediate
+              </div>
+
+            </div>
+
+            <h2 className="serif text-[28px] sm:text-[30px] mt-6">
+              Weekly Test — Algebra
+            </h2>
+
+            <p className="mt-2 text-[13px] text-black/50">
+              30 mins · 20 Qs · Negative marking
+            </p>
+
+            <div className="mt-8 flex items-center gap-3">
+
+              <a
+                href="#"
+                className="bg-[#2D5BFF] text-white px-6 py-3 rounded-full text-[13px] font-medium hover:bg-black transition"
+              >
+                Start Test →
+              </a>
+
+              {/* <span className="text-[11px] text-black/30">
+                Opens in new tab
+              </span> */}
+
+            </div>
+
+            {/* Update logic */}
+
+            {/* <div className="mt-6 pt-5 border-t border-black/10">
+
+              <div className="flex gap-2">
+
+                <input
+                  type="text"
+                  value={weeklyTest}
+                  onChange={(e) => setWeeklyTest(e.target.value)}
+                  placeholder="Paste Cloud Test Link"
+                  className="flex-1 min-w-0 h-9 px-4 rounded-full border border-black/10 bg-white text-[11px] outline-none focus:border-black"
+                />
+
+                <button
+                  onClick={() => setWeeklyTest(weeklyTest)}
+                  className="h-9 px-4 rounded-full border border-black/10 bg-white text-[11px] hover:bg-black hover:text-white transition"
+                >
+                  Update
+                </button>
+
+              </div>
+
+            </div> */}
+          </div>
+
+          {/* Full Mock */}
+          <div className="border border-black/70 rounded-3xl bg-[#FFFCF5] p-6 sm:p-8">
+
+            <div className="flex justify-between items-center gap-3">
+
+              <div className="text-[10px] sm:text-[11px] uppercase tracking-[0.15em] border border-black/10 bg-white rounded-full px-3 py-1.5">
+                Full Mock · 19 Oct
+              </div>
+
+              <div className="text-[9px] uppercase tracking-wider bg-black text-white rounded-full px-3 py-1.5">
+                Advanced
+              </div>
+
+            </div>
+
+            <h2 className="serif text-[28px] sm:text-[30px] mt-6">
+              Full Mock — JEE Pattern
+            </h2>
+
+            <p className="mt-2 text-[13px] text-black/50">
+              3 hrs · 75 Qs · All India Rank
+            </p>
+
+            <div className="mt-8 flex items-center gap-3">
+
+              <a
+                href="#"
+                className="bg-black text-white px-6 py-3 rounded-full text-[13px] font-medium hover:bg-[#2D5BFF] transition"
+              >
+                Start Test →
+              </a>
+
+              {/* <span className="text-[11px] text-black/30">
+                Opens in new tab
+              </span> */}
+
+            </div>
+
+            {/* Update link */}
+
+            {/* <div className="mt-6 pt-5 border-t border-black/10">
+
+              <div className="flex gap-2">
+
+                <input
+                  type="text"
+                  value={mockTest}
+                  onChange={(e) => setMockTest(e.target.value)}
+                  placeholder="Paste Cloud Test Link"
+                  className="flex-1 min-w-0 h-9 px-4 rounded-full border border-black/10 bg-white text-[11px] outline-none focus:border-black"
+                />
+
+                <button
+                  onClick={() => setMockTest(mockTest)}
+                  className="h-9 px-4 rounded-full border border-black/10 bg-white text-[11px] hover:bg-black hover:text-white transition"
+                >
+                  Update
+                </button>
+
+              </div>
+
+            </div> */}
+          </div>
+
+        </div>
+
+        {/* Bottom note */}
+        {/* <p className="mt-6 text-[11px] text-black/35">
+          Admin updates are local preview only. For production, replace with
+          your test platform URL.
+        </p> */}
+
+      </div>
+    </section>
+  );
+};
+
+export default TestShedule;
