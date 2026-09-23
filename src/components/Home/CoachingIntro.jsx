@@ -125,7 +125,7 @@ const CoachingIntro = () => {
 
             <div className="pl-4 border-l border-black/10">
               <div className="serif text-[27px] sm:text-[30px]">
-                2 yrs
+                4 yrs
               </div>
               <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-black/50">
                 Teaching

@@ -23,7 +23,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Current batch */}
+          {/* Current Batch */}
           <div className="w-full lg:w-[250px] h-fit rounded-2xl border border-white/10 bg-white/5 p-6">
 
             <div className="text-[10px] uppercase tracking-[0.15em] text-white/40">
@@ -41,10 +41,11 @@ const Contact = () => {
             </div>
 
           </div>
+
         </div>
 
-        {/* Contact cards */}
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[700px]">
+        {/* Contact Cards */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
           {/* WhatsApp */}
           <a
@@ -126,8 +127,8 @@ const Contact = () => {
 
             </div>
 
-            <div>
-              <div className="text-[14px] font-medium">
+            <div className="min-w-0">
+              <div className="text-[13px] sm:text-[14px] font-medium break-all">
                 cinemathicedu.pt@gmail.com
               </div>
 
@@ -138,10 +139,42 @@ const Contact = () => {
 
           </a>
 
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/cinemathic/"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:bg-white/10 transition"
+          >
+
+            <div className="flex justify-between items-start">
+
+              <div className="text-[10px] uppercase tracking-[0.15em] text-white/40">
+                Instagram
+              </div>
+
+              <div className="w-8 h-8 rounded-full bg-white text-black grid place-items-center text-sm">
+                ↗
+              </div>
+
+            </div>
+
+            <div>
+              <div className="text-[14px] font-medium">
+                @cinemathic
+              </div>
+
+              <div className="mt-1 text-[11px] text-white/40">
+                Follow us
+              </div>
+            </div>
+
+          </a>
+
         </div>
 
         {/* Right side branding */}
-        <div className="mt-12 lg:mt-[-90px] flex justify-end pointer-events-none">
+        <div className="mt-12 flex justify-end">
 
           <div className="text-right">
 
@@ -158,7 +191,7 @@ const Contact = () => {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-[10px] sm:text-[11px] uppercase tracking-[0.13em] text-white/30">
+        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-[10px] sm:text-[11px] uppercase tracking-[0.13em] text-white/30">
 
           <span>
             © 2026 Cinemathic · All rights reserved
@@ -171,6 +204,7 @@ const Contact = () => {
         </div>
 
       </div>
+
     </footer>
   )
 }

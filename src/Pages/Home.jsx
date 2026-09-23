@@ -5,6 +5,7 @@ import ClassSchedule from '../components/Home/ClassSchedule';
 import TestSchedule from '../components/Home/TestSchedule';
 import Review from '../components/Home/Review';
 import Contact from '../components/Home/Contact';
+import Courses from '../components/Home/Courses';
 
 export default function Home() {
 
@@ -26,16 +27,19 @@ export default function Home() {
       {/* 2. MENTOR INTRO */}
       <MentorIntro/>
 
-      {/* 3. CLASS LINK */}
+      {/* 3.Courses */}
+        <Courses/>
+
+      {/* 4. CLASS LINK */}
       <ClassSchedule/>
 
-      {/* 4. TEST LINK */}
+      {/* 5. TEST LINK */}
       <TestSchedule/>
 
-      {/* 5. REVIEWS */}
+      {/* 6. REVIEWS */}
       <Review/>
 
-      {/* 6. CONTACT */}
+      {/* 7. CONTACT */}
       <Contact/>
     </div>
   );

@@ -47,7 +47,7 @@ const ClassSchedule = () => {
 
                 <div>
                   <h2 className="serif text-[28px] sm:text-[32px]">
-                    Join Zoom Class
+                    Join Class
                   </h2>
 
                   <div className="mt-3 flex flex-wrap items-center gap-2 text-[12px] text-black/55">
@@ -67,7 +67,7 @@ const ClassSchedule = () => {
                   rel="noreferrer"
                   className="bg-[#2D5BFF] text-white px-7 py-3.5 rounded-full text-[14px] font-medium text-center hover:bg-black transition"
                 >
-                  Join Zoom Class →
+                  Join Class →
                 </a>
 
               </div>

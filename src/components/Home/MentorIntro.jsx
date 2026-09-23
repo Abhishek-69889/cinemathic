@@ -30,7 +30,7 @@ const MentorIntro = () => {
       </div>
 
       <div className="mt-1 text-[12px] sm:text-[13px] font-medium">
-        2+ Years · Mathematics Educator
+        4+ Years · Mathematics Educator
       </div>
 
     </div>
@@ -90,7 +90,7 @@ const MentorIntro = () => {
 
             <div className="bg-[#FFFCF5] border border-black/10 rounded-2xl p-4">
               <div className="text-[13px] font-medium">
-                2 yrs teaching
+                4 yrs teaching
               </div>
 
               <div className="mt-2 text-[11px] text-black/40">
@@ -100,11 +100,11 @@ const MentorIntro = () => {
 
             <div className="bg-[#FFFCF5] border border-black/10 rounded-2xl p-4">
               <div className="text-[13px] font-medium">
-                500+ JEE selections
+                200+ JEE selections
               </div>
 
               <div className="mt-2 text-[11px] text-black/40">
-                2024 — 2026
+                2022 — 2026
               </div>
             </div>
 

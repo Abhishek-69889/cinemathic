@@ -11,17 +11,14 @@ const Navbar = () => {
 
         {/* Logo */}
         
-        <a href="#about" className='flex items-center gap-1 serif text-[24px] sm:text-[28px] tracking-tight'>
-          <img
-            src={logo}
-            alt="Cinemathic"
-            className="w-10 sm:w-10 h-10 rounded-2xl"
-          />
-          Cinemathic<span className="text-green-400">.</span>
-        </a>
+<a href="#about" className='flex items-center gap-1 font-bold serif text-[24px] sm:text-[28px] tracking-tight'>
+  <img src={logo} alt="Cinemathic" className="w-10 sm:w-10 h-10 rounded-2xl" />
+  Cine<pre className="text-green-400">math</pre>ic<span className="text-green-400">.</span>
+</a>
+
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 lg:gap-8 text-[12px] lg:text-[13px] uppercase tracking-widest">
+        <div className=" hidden md:flex items-center gap-6 lg:gap-8 text-[12px] lg:text-[13px] uppercase tracking-widest">
 
           <a
             href="#about"
@@ -86,7 +83,7 @@ const Navbar = () => {
             <a
               href="#about"
               onClick={() => setMenuOpen(false)}
-              className="py-3 hover:text-[#2D5BFF]"
+              className="py-3 hover:text-[#2D5BFF] "
             >
               About
             </a>
