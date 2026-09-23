@@ -70,7 +70,7 @@ const MentorIntro = () => {
               “I don’t teach tricks, I teach thinking.”
             </div>
             <div className="mt-2 text-[9px] uppercase tracking-[0.16em] text-black/35">
-              — Classroom principle, since 2014
+              — Classroom principle, since 2024
             </div>
           </blockquote>
 

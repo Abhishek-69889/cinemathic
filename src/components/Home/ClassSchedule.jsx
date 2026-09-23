@@ -13,7 +13,7 @@ const ClassSchedule = () => {
 
   return (
     <section id="live" className="border-t border-black/10 bg-[#FFFCF5]">
-      <div className="max-w-[1220px] mx-auto px-5 sm:px-8 lg:px-0 py-16 sm:py-20">
+      <div className="max-w-305 mx-auto px-5 sm:px-8 lg:px-0 py-16 sm:py-20">
 
 
         <div className="mt-8 grid lg:grid-cols-[1.45fr_1fr] gap-8">
@@ -36,9 +36,9 @@ const ClassSchedule = () => {
 
               </div>
 
-              <div className="mt-3 text-[11px] text-black/40">
+              {/* <div className="mt-3 text-[11px] text-black/40">
                 Recording on WhatsApp after class
-              </div>
+              </div> */}
             </div>
 
             <div className="p-5 sm:p-8">
@@ -108,7 +108,7 @@ const ClassSchedule = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
 
             <div className="bg-[#111] text-[#FFFCF5] rounded-3xl p-7 sm:p-8">
 

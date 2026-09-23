@@ -110,7 +110,7 @@ const Contact = () => {
 
           {/* Email */}
           <a
-            href="mailto:hello@cinemathic.com"
+            href="mailto:cinemathicedu.pt@gmail.com"
             className="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:bg-white/10 transition"
           >
 
@@ -128,7 +128,7 @@ const Contact = () => {
 
             <div>
               <div className="text-[14px] font-medium">
-                hello@cinemathic.com
+                cinemathicedu.pt@gmail.com
               </div>
 
               <div className="mt-1 text-[11px] text-white/40">
