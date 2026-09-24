@@ -1,5 +1,303 @@
 @import "tailwindcss";
 
+/* ================================
+   CINEMATHIC COLOR SYSTEM
+================================ */
+
+:root {
+  /* ---------- Main Colors ---------- */
+
+  --primary: #2D5BFF;
+  --primary-hover: #1E46D8;
+
+  --secondary: #FFE45C;
+
+  /* ---------- Background ---------- */
+
+  --background: #FFFCF5;
+  --background-soft: #F3F0E8;
+  --background-white: #FFFFFF;
+
+  /* ---------- Dark Sections ---------- */
+
+  --dark: #111111;
+  --dark-soft: #171717;
+  --dark-card: #1D1D1D;
+
+  /* ---------- Text ---------- */
+
+  --text: #111111;
+  --text-secondary: rgba(17, 17, 17, 0.65);
+  --text-muted: rgba(17, 17, 17, 0.45);
+  --text-light: rgba(17, 17, 17, 0.3);
+
+  /* ---------- Dark Mode Text ---------- */
+
+  --dark-text: #FFFCF5;
+  --dark-text-secondary: rgba(255, 252, 245, 0.75);
+  --dark-text-muted: rgba(255, 252, 245, 0.5);
+  --dark-text-light: rgba(255, 252, 245, 0.3);
+
+  /* ---------- Borders ---------- */
+
+  --border: rgba(17, 17, 17, 0.1);
+  --border-strong: rgba(17, 17, 17, 0.2);
+
+  --dark-border: rgba(255, 255, 255, 0.1);
+  --dark-border-strong: rgba(255, 255, 255, 0.2);
+
+  /* ---------- Status Colors ---------- */
+
+  --success: #25D366;
+  --success-dark: #16A34A;
+
+  --danger: #EF4444;
+  --warning: #F59E0B;
+
+  /* ---------- Card Colors ---------- */
+
+  --card: #FFFFFF;
+  --card-soft: #F3F0E8;
+
+  --dark-card-bg: #171717;
+  --dark-card-soft: #1D1D1D;
+
+  /* ---------- Input Colors ---------- */
+
+  --input-bg: #FFFFFF;
+  --input-border: rgba(17, 17, 17, 0.1);
+
+  /* ---------- Shadows ---------- */
+
+  --shadow-small: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   DARK MODE
+================================ */
+
+.dark {
+  /* ---------- Main Colors ---------- */
+
+  --primary: #5B7CFF;
+  --primary-hover: #7690FF;
+
+  --secondary: #FFE45C;
+
+  /* ---------- Background ---------- */
+
+  --background: #111111;
+  --background-soft: #171717;
+  --background-white: #1D1D1D;
+
+  /* ---------- Dark Sections ---------- */
+
+  --dark: #FFFCF5;
+  --dark-soft: #F3F0E8;
+  --dark-card: #FFFFFF;
+
+  /* ---------- Text ---------- */
+
+  --text: #FFFCF5;
+  --text-secondary: rgba(255, 252, 245, 0.75);
+  --text-muted: rgba(255, 252, 245, 0.5);
+  --text-light: rgba(255, 252, 245, 0.3);
+
+  /* ---------- Dark Mode Text ---------- */
+
+  --dark-text: #111111;
+  --dark-text-secondary: rgba(17, 17, 17, 0.7);
+  --dark-text-muted: rgba(17, 17, 17, 0.45);
+  --dark-text-light: rgba(17, 17, 17, 0.3);
+
+  /* ---------- Borders ---------- */
+
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.2);
+
+  --dark-border: rgba(17, 17, 17, 0.1);
+  --dark-border-strong: rgba(17, 17, 17, 0.2);
+
+  /* ---------- Card Colors ---------- */
+
+  --card: #1D1D1D;
+  --card-soft: #171717;
+
+  --dark-card-bg: #F3F0E8;
+  --dark-card-soft: #FFFFFF;
+
+  /* ---------- Input Colors ---------- */
+
+  --input-bg: #1D1D1D;
+  --input-border: rgba(255, 255, 255, 0.1);
+
+  /* ---------- Shadows ---------- */
+
+  --shadow-small: 0 2px 10px rgba(0, 0, 0, 0.2);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ================================
+   COMMON UTILITY CLASSES
+================================ */
+
+.cinemathic-bg {
+  background-color: var(--background);
+}
+
+.cinemathic-bg-soft {
+  background-color: var(--background-soft);
+}
+
+.cinemathic-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+}
+
+.cinemathic-card-soft {
+  background-color: var(--card-soft);
+  border: 1px solid var(--border);
+}
+
+.cinemathic-text {
+  color: var(--text);
+}
+
+.cinemathic-text-secondary {
+  color: var(--text-secondary);
+}
+
+.cinemathic-text-muted {
+  color: var(--text-muted);
+}
+
+.cinemathic-primary {
+  color: var(--primary);
+}
+
+.cinemathic-primary-bg {
+  background-color: var(--primary);
+}
+
+.cinemathic-border {
+  border-color: var(--border);
+}
+
+
+/* ================================
+   DARK SECTION
+================================ */
+
+.cinemathic-dark {
+  background-color: #111111;
+  color: #FFFCF5;
+}
+
+.dark .cinemathic-dark {
+  background-color: #F3F0E8;
+  color: #111111;
+}
+
+
+/* ================================
+   DARK CARD
+================================ */
+
+.cinemathic-dark-card {
+  background-color: #171717;
+  color: #FFFCF5;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .cinemathic-dark-card {
+  background-color: #FFFFFF;
+  color: #111111;
+  border-color: rgba(17, 17, 17, 0.1);
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.cinemathic-button {
+  background-color: var(--primary);
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.cinemathic-button:hover {
+  background-color: var(--primary-hover);
+}
+
+
+/* ================================
+   BORDER
+================================ */
+
+.cinemathic-border {
+  border-color: var(--border);
+}
+
+
+/* ================================
+   INPUT
+================================ */
+
+.cinemathic-input {
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--input-border);
+}
+
+.cinemathic-input::placeholder {
+  color: var(--text-muted);
+}
+
+.cinemathic-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+
+/* ================================
+   LINKS
+================================ */
+
+.cinemathic-link {
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.cinemathic-link:hover {
+  color: var(--primary);
+}
+
+
+/* ================================
+   SELECTION
+================================ */
 ::selection {
   background-color: yellow;
   color: black; 

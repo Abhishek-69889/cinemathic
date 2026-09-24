@@ -6,6 +6,7 @@ import TestSchedule from '../components/Home/TestSchedule';
 import Review from '../components/Home/Review';
 import Contact from '../components/Home/Contact';
 import Courses from '../components/Home/Courses';
+import CourseFeatures from '../components/Home/CourseFeatures';
 
 export default function Home() {
 
@@ -29,6 +30,8 @@ export default function Home() {
 
       {/* 3.Courses */}
         <Courses/>
+
+        <CourseFeatures/>
 
       {/* 4. CLASS LINK */}
       <ClassSchedule/>

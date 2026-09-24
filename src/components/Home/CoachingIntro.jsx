@@ -4,9 +4,9 @@ const CoachingIntro = () => {
   return (
     <section
       id="about"
-      className="w-full bg-[#FFFCF5] text-[#111111]  "
+      className="w-full bg-[var(--background)] text-[var(--text)] transition-colors"
     >
-      <div className="max-w-312.5 mx-auto px-5 sm:px-8 lg:px-0 pt-16 sm:pt-20 lg:pt-24 pb-14 lg:pb-16 grid grid-cols-1 lg:grid-cols-[1fr_0.98fr] gap-12 lg:gap-16 items-center">
+      <div className="max-w-312.5 mx-auto px-5 sm:px-8  lg:px-2 pt-16 sm:pt-20 lg:pt-24 pb-14 lg:pb-16 grid grid-cols-1 lg:grid-cols-[1fr_0.98fr] gap-12 lg:gap-16 items-center">
 
         {/* ================= LEFT CONTENT ================= */}
         <div className="max-w-155">
@@ -39,7 +39,7 @@ const CoachingIntro = () => {
               sm:text-[17px]
               lg:text-[18px]
               leading-[1.6]
-              text-[#334155]
+              text-[var(--text-secondary)]
             "
           >
             Cinemathic is not a tuition. It's where formulas become
@@ -49,19 +49,18 @@ const CoachingIntro = () => {
 
           {/* CTA */}
           <div className="mt-8 flex flex-col xs:flex-row sm:flex-row gap-3">
+
             <a
               href="#live"
               className="
                 inline-flex items-center justify-center gap-3
-                bg-[#2D5BFF]
-                text-white
+                cinemathic-button
                 px-6 sm:px-7
                 py-3.5
                 rounded-full
                 text-[14px]
                 font-medium
                 transition
-                hover:bg-black
               "
             >
               Join Live Class
@@ -75,19 +74,20 @@ const CoachingIntro = () => {
               href="#tests"
               className="
                 inline-flex items-center justify-center
-                border border-black/15
-                bg-white/40
+                border cinemathic-border
+                bg-[var(--card)]
                 px-6 sm:px-7
                 py-3.5
                 rounded-full
                 text-[14px]
                 font-medium
                 transition
-                hover:border-black
+                hover:border-[var(--primary)]
               "
             >
               Take Test
             </a>
+
           </div>
 
           {/* Stats */}
@@ -95,44 +95,50 @@ const CoachingIntro = () => {
             className="
               mt-12
               pt-6
-              border-t border-black/10
+              border-t cinemathic-border
               grid grid-cols-3
               max-w-135
             "
           >
-            {/* Experiance intro */}
-            
+
+            {/* Students */}
             <div className="pr-4">
               <div className="serif text-[27px] sm:text-[30px]">
                 200+
               </div>
-              <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-black/50">
+
+              <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
                 Students
                 <br className="sm:hidden" /> Mentored
               </div>
             </div>
 
-            <div className="px-4 border-l border-black/10">
+            {/* Selections */}
+            <div className="px-4 border-l cinemathic-border">
               <div className="serif text-[27px] sm:text-[30px]">
                 98%
               </div>
-              <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-black/50">
+
+              <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
                 Board & JEE
                 <br />
                 Selections
               </div>
             </div>
 
-            <div className="pl-4 border-l border-black/10">
+            {/* Experience */}
+            <div className="pl-4 border-l cinemathic-border">
               <div className="serif text-[27px] sm:text-[30px]">
                 4 yrs
               </div>
-              <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-black/50">
+
+              <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
                 Teaching
                 <br />
                 Experience
               </div>
             </div>
+
           </div>
         </div>
 
@@ -145,20 +151,21 @@ const CoachingIntro = () => {
               relative
               w-full
               rounded-[26px]
-              border border-black/10
-              bg-white
+              border cinemathic-border
+              bg-[var(--card)]
               p-5 sm:p-7 lg:p-8
-              shadow-[0_20px_60px_rgba(0,0,0,0.05)]
+              shadow-[var(--shadow-medium)]
+              transition-colors
             "
           >
 
             {/* Card header */}
             <div className="flex items-center justify-between mb-7">
-              
 
-              <span className="text-[9px] uppercase tracking-[0.14em] text-black/35">
+              <span className="text-[9px] uppercase tracking-[0.14em] text-[var(--text-muted)]">
                 CINEMATHIC.World
               </span>
+
             </div>
 
             {/* Graph */}
@@ -168,15 +175,27 @@ const CoachingIntro = () => {
                 h-71.25
                 sm:h-77.5
                 rounded-[17px]
-                border border-black/5
+                border cinemathic-border
                 overflow-hidden
-                bg-[#FFFCF5]
+                bg-[var(--background)]
+                transition-colors
               "
             >
 
               {/* Yellow glow */}
               <div
-                className="absolute -right-12 -top-10 w-64 h-64 rounded-full bg-[#FFE873] blur-[45px] opacity-80 "/>
+                className="
+                  absolute
+                  -right-12
+                  -top-10
+                  w-64
+                  h-64
+                  rounded-full
+                  bg-[var(--secondary)]
+                  blur-[45px]
+                  opacity-80
+                "
+              />
 
               {/* Graph SVG */}
               <svg
@@ -184,13 +203,14 @@ const CoachingIntro = () => {
                 className="absolute inset-0 w-full h-full"
                 preserveAspectRatio="none"
               >
+
                 {/* Axes */}
                 <line
                   x1="80"
                   y1="235"
                   x2="440"
                   y2="235"
-                  stroke="#111"
+                  stroke="currentColor"
                   strokeOpacity="0.12"
                 />
 
@@ -199,7 +219,7 @@ const CoachingIntro = () => {
                   y1="40"
                   x2="120"
                   y2="270"
-                  stroke="#111"
+                  stroke="currentColor"
                   strokeOpacity="0.12"
                 />
 
@@ -209,7 +229,7 @@ const CoachingIntro = () => {
                   y1="40"
                   x2="285"
                   y2="235"
-                  stroke="#111"
+                  stroke="currentColor"
                   strokeOpacity="0.15"
                   strokeDasharray="6 7"
                 />
@@ -223,7 +243,7 @@ const CoachingIntro = () => {
                     C 315 95, 350 78, 390 58
                   "
                   fill="none"
-                  stroke="#2D5BFF"
+                  stroke="var(--primary)"
                   strokeWidth="3.5"
                   strokeLinecap="round"
                 />
@@ -233,7 +253,7 @@ const CoachingIntro = () => {
                   cx="285"
                   cy="115"
                   r="7"
-                  fill="#111"
+                  fill="currentColor"
                 />
 
                 <circle
@@ -241,41 +261,68 @@ const CoachingIntro = () => {
                   cy="115"
                   r="12"
                   fill="none"
-                  stroke="#111"
+                  stroke="currentColor"
                   strokeOpacity="0.1"
                 />
+
               </svg>
 
               {/* Graph labels */}
-              <span className="absolute left-[12%] top-[25%] text-[10px] text-black/30">
+              <span className="absolute left-[12%] top-[25%] text-[10px] text-[var(--text-light)]">
                 lim x→a f(x) = L
               </span>
 
-              <span className="absolute left-[53%] top-[18%] text-[12px] text-black/50">
+              <span className="absolute left-[53%] top-[18%] text-[12px] text-[var(--text-muted)]">
                 a
               </span>
 
-              <span className="absolute left-[55%] top-[53%] text-[11px] text-black/40">
+              <span className="absolute left-[55%] top-[53%] text-[11px] text-[var(--text-muted)]">
                 L
               </span>
 
-              <span className="absolute left-4 bottom-5 serif italic text-[12px] text-black/45">
+              <span className="absolute left-4 bottom-5 serif italic text-[12px] text-[var(--text-muted)]">
                 f continuous at a if limit exists
               </span>
 
               {/* Arrow button */}
               <button
-                className="absolute right-4 bottom-4 w-8 h-8 rounded-full bg-black text-white text-[12px] grid place-items-center hover:bg-[#2D5BFF]  transition">
+                className="
+                  absolute
+                  right-4
+                  bottom-4
+                  w-8
+                  h-8
+                  rounded-full
+                  bg-[var(--text)]
+                  text-[var(--background)]
+                  text-[12px]
+                  grid
+                  place-items-center
+                  hover:bg-[var(--primary)]
+                  hover:text-white
+                  transition
+                "
+              >
                 ↗
               </button>
+
             </div>
 
             {/* Information boxes */}
             <div className="grid grid-cols-3 gap-3 mt-6">
 
               <div
-                className="rounded-xl border border-black/5 bg-[#FFFCF5] px-3 py-3 min-h-14.25">
-                <div className="text-[8px] uppercase tracking-[0.15em] text-black/40">
+                className="
+                  rounded-xl
+                  border cinemathic-border
+                  bg-[var(--background)]
+                  px-3
+                  py-3
+                  min-h-14.25
+                  transition-colors
+                "
+              >
+                <div className="text-[8px] uppercase tracking-[0.15em] text-[var(--text-muted)]">
                   Topic
                 </div>
 
@@ -285,8 +332,17 @@ const CoachingIntro = () => {
               </div>
 
               <div
-                className="rounded-xl border border-black/5 bg-[#FFFCF5] px-3 py-3 min-h-14.25">
-                <div className="text-[8px] uppercase tracking-[0.15em] text-black/40">
+                className="
+                  rounded-xl
+                  border cinemathic-border
+                  bg-[var(--background)]
+                  px-3
+                  py-3
+                  min-h-14.25
+                  transition-colors
+                "
+              >
+                <div className="text-[8px] uppercase tracking-[0.15em] text-[var(--text-muted)]">
                   Level
                 </div>
 
@@ -296,8 +352,17 @@ const CoachingIntro = () => {
               </div>
 
               <div
-                className="rounded-xl border border-black/5 bg-[#FFFCF5] px-3 py-3  min-h-14.25">
-                <div className="text-[8px] uppercase tracking-[0.15em] text-black/40">
+                className="
+                  rounded-xl
+                  border cinemathic-border
+                  bg-[var(--background)]
+                  px-3
+                  py-3
+                  min-h-14.25
+                  transition-colors
+                "
+              >
+                <div className="text-[8px] uppercase tracking-[0.15em] text-[var(--text-muted)]">
                   Mode
                 </div>
 
@@ -307,12 +372,28 @@ const CoachingIntro = () => {
               </div>
 
             </div>
+
           </div>
 
           {/* Floating yellow note */}
-
-          <div className="absolute -bottom-6 left-[-18px] sm:left-[-28px] w-[155px] sm:w-[165px] rounded-xl border border-black/10 bg-[#FFE75C] px-4 py-3 shadow-[0_8px_20px_rgba(0,0,0,0.08)] rotate-[-1.5deg]">
-            <p className="text-[11px] sm:text-[12px] leading-[1.3] font-medium">
+          <div
+            className="
+              absolute
+              -bottom-6
+              left-[-18px]
+              sm:left-[-28px]
+              w-[155px]
+              sm:w-[165px]
+              rounded-xl
+              border cinemathic-border
+              bg-[var(--secondary)]
+              px-4
+              py-3
+              shadow-[var(--shadow-small)]
+              rotate-[-1.5deg]
+            "
+          >
+            <p className="text-[11px] sm:text-[12px] leading-[1.3] font-medium text-[#111111]">
               "Every formula has a backstory. We start there."
             </p>
           </div>

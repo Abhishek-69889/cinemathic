@@ -1,13 +1,49 @@
 import React from 'react'
+import ContactCard from '../cards/ContactCard'
 
 const Contact = () => {
-  return (
-    <footer id="contact" className="bg-[#111111] text-[#FFFCF5]">
 
-      <div className="max-w-[1220px] mx-auto px-5 sm:px-8 lg:px-0 py-14 sm:py-16 lg:py-20">
+  const contacts = [
+    {
+      type: 'WhatsApp',
+      title: 'Chat Now',
+      details: 'Fastest response',
+      link: 'https://wa.me/916376418579',
+      style: 'whatsapp'
+    },
+    {
+      type: 'Call',
+      title: '+91 6376418579',
+      details: '9 AM — 9 PM IST',
+      link: 'tel:+916376418579',
+      style: 'normal'
+    },
+    {
+      type: 'Email',
+      title: 'cinemathicedu.pt@gmail.com',
+      details: 'For collaborations',
+      link: 'mailto:cinemathicedu.pt@gmail.com',
+      style: 'normal'
+    },
+    {
+      type: 'Instagram',
+      title: '@cinemathic',
+      details: 'Follow us',
+      link: 'https://www.instagram.com/cinemathic/',
+      style: 'normal'
+    }
+  ]
+
+  return (
+    <footer
+      id="contact"
+      className="bg-[#111111] text-[#FFFCF5] border-t-2 cinemathic-border"
+    >
+
+      <div className="max-w-[1220px] mx-auto px-5 sm:px-8 lg:px-2 py-10 sm:py-12 lg:py-14">
 
         {/* Top section */}
-        <div className="flex flex-col lg:flex-row justify-between gap-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
 
           <div>
             <h2 className="serif text-[56px] sm:text-[70px] leading-[0.9]">
@@ -16,7 +52,7 @@ const Contact = () => {
               <span className="italic">maths.</span>
             </h2>
 
-            <p className="mt-7 max-w-[470px] text-[15px] sm:text-[16px] leading-6 text-white/55">
+            <p className="mt-6 max-w-[470px] text-[15px] sm:text-[16px] leading-6 text-white/55">
               For admissions, batches, or a quick doubt — message directly.
               <br className="hidden sm:block" />
               Response within 2 hours, 9 AM to 9 PM IST.
@@ -45,136 +81,19 @@ const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/916376418579"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-[#FFFCF5] text-black rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:scale-[1.01] transition"
-          >
+          {contacts.map((contact, index) => (
+            <ContactCard
+            key={index}
+            contact={contact}
+            />
+          ))}
 
-            <div className="flex justify-between items-start">
-
-              <div className="text-[10px] uppercase tracking-[0.15em] text-black/40">
-                WhatsApp
-              </div>
-
-              <div className="w-8 h-8 rounded-full bg-[#25D366] text-white grid place-items-center text-sm">
-                ↗
-              </div>
-
-            </div>
-
-            <div>
-              <div className="text-[14px] font-medium">
-                Chat Now
-              </div>
-
-              <div className="mt-1 text-[11px] text-black/40">
-                Fastest response
-              </div>
-            </div>
-
-          </a>
-
-          {/* Call */}
-          <a
-            href="tel:+916376418579"
-            className="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:bg-white/10 transition"
-          >
-
-            <div className="flex justify-between items-start">
-
-              <div className="text-[10px] uppercase tracking-[0.15em] text-white/40">
-                Call
-              </div>
-
-              <div className="w-8 h-8 rounded-full bg-white text-black grid place-items-center text-sm">
-                ↗
-              </div>
-
-            </div>
-
-            <div>
-              <div className="text-[14px] font-medium">
-                +91 6376418579
-              </div>
-
-              <div className="mt-1 text-[11px] text-white/40">
-                9 AM — 9 PM IST
-              </div>
-            </div>
-
-          </a>
-
-          {/* Email */}
-          <a
-            href="mailto:cinemathicedu.pt@gmail.com"
-            className="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:bg-white/10 transition"
-          >
-
-            <div className="flex justify-between items-start">
-
-              <div className="text-[10px] uppercase tracking-[0.15em] text-white/40">
-                Email
-              </div>
-
-              <div className="w-8 h-8 rounded-full bg-white text-black grid place-items-center text-sm">
-                ↗
-              </div>
-
-            </div>
-
-            <div className="min-w-0">
-              <div className="text-[13px] sm:text-[14px] font-medium break-all">
-                cinemathicedu.pt@gmail.com
-              </div>
-
-              <div className="mt-1 text-[11px] text-white/40">
-                For collaborations
-              </div>
-            </div>
-
-          </a>
-
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/cinemathic/"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:bg-white/10 transition"
-          >
-
-            <div className="flex justify-between items-start">
-
-              <div className="text-[10px] uppercase tracking-[0.15em] text-white/40">
-                Instagram
-              </div>
-
-              <div className="w-8 h-8 rounded-full bg-white text-black grid place-items-center text-sm">
-                ↗
-              </div>
-
-            </div>
-
-            <div>
-              <div className="text-[14px] font-medium">
-                @cinemathic
-              </div>
-
-              <div className="mt-1 text-[11px] text-white/40">
-                Follow us
-              </div>
-            </div>
-
-          </a>
-
-        </div>
+</div>
 
         {/* Right side branding */}
-        <div className="mt-12 flex justify-end">
+        <div className="mt-8 flex justify-end">
 
           <div className="text-right">
 
@@ -182,7 +101,7 @@ const Contact = () => {
               cinemathic<span className="text-[#2D5BFF]">.</span>
             </div>
 
-            <div className="mt-3 text-[10px] uppercase tracking-[0.14em] text-white/30">
+            <div className="mt-2 text-[10px] uppercase tracking-[0.14em] text-white/30">
               Maths, taught like a story — Est. 2024
             </div>
 
@@ -191,7 +110,7 @@ const Contact = () => {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-[10px] sm:text-[11px] uppercase tracking-[0.13em] text-white/30">
+        <div className="mt-8 pt-5 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-[10px] sm:text-[11px] uppercase tracking-[0.13em] text-white/30">
 
           <span>
             © 2026 Cinemathic · All rights reserved
