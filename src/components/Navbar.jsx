@@ -16,6 +16,10 @@ const navLinks = [
     link: '#courses'
   },
   {
+    name: 'Gallery',
+    link: '#gallery'
+  },
+  {
     name: 'Class',
     link: '#live'
   },
@@ -32,26 +36,20 @@ const navLinks = [
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
-  const [darkMode, setDarkMode] = useState(false)
-
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle('dark')
-    setDarkMode(!darkMode)
-  }
 
   const closeMenu = () => {
     setMenuOpen(false)
   }
 
   return (
-    <nav className="sticky top-0 z-50 bg-[var(--background)]/90 backdrop-blur-xl border-b border-[var(--border)] transition-colors">
+    <nav className="sticky top-0 z-50 bg-[var(--background)]/90 backdrop-blur-xl border-b border-[var(--border)]">
 
       <div className="max-w-[1220px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-0 h-16 sm:h-[72px] flex items-center justify-between gap-4">
 
         {/* Logo */}
         <a
           href="#about"
-          className="flex items-center gap-1 font-bold serif text-[22px] sm:text-[26px] lg:text-[28px] tracking-tight text-[var(--text)] shrink-0"
+          className="flex items-center gap-1 font-bold text-[22px] sm:text-[26px] lg:text-[28px] cinemathic-text tracking-tight text-[var(--text)] shrink-0"
         >
 
           <img
@@ -82,26 +80,17 @@ const Navbar = () => {
             <a
               key={index}
               href={item.link}
-              className="cinemathic-link whitespace-nowrap"
+              className="cinemathic-link whitespace-nowrap tracking-wider font-semibold"
             >
               {item.name}
             </a>
 
           ))}
 
-          {/* Dark / Light Toggle */}
-          <button
-            onClick={toggleDarkMode}
-            className="w-9 h-9 rounded-full border cinemathic-border flex items-center justify-center text-[15px] text-[var(--text)] hover:border-[var(--primary)] transition shrink-0"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? '☀' : '☾'}
-          </button>
-
           {/* Contact */}
           <a
             href="#contact"
-            className="cinemathic-button px-4 xl:px-5 py-2.5 rounded-full whitespace-nowrap"
+            className="cinemathic-button px-4 xl:px-5 py-2.5 rounded-full whitespace-nowrap tracking-wider font-semibold"
           >
             Contact
           </a>
@@ -110,15 +99,6 @@ const Navbar = () => {
 
         {/* Mobile / Tablet Buttons */}
         <div className="lg:hidden flex items-center gap-2 shrink-0">
-
-          {/* Dark / Light Toggle */}
-          <button
-            onClick={toggleDarkMode}
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border cinemathic-border flex items-center justify-center text-[15px] text-[var(--text)] hover:border-[var(--primary)] transition"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? '☀' : '☾'}
-          </button>
 
           {/* Menu Button */}
           <button
@@ -147,7 +127,7 @@ const Navbar = () => {
                   key={index}
                   href={item.link}
                   onClick={closeMenu}
-                  className={`py-3 sm:py-3.5 cinemathic-link cinemathic-border ${
+                  className={`py-3 sm:py-3.5 cinemathic-link cinemathic-border tracking-wider font-semibold ${
                     index !== navLinks.length - 1 ? 'border-b' : ''
                   }`}
                 >
@@ -160,7 +140,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="mt-3 cinemathic-button text-center py-3 rounded-full"
+                className="mt-3 cinemathic-button text-center py-3 rounded-full tracking-wider font-semibold"
               >
                 Contact
               </a>

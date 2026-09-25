@@ -7,82 +7,8 @@
 :root {
   /* ---------- Main Colors ---------- */
 
-  --primary: #2D5BFF;
-  --primary-hover: #1E46D8;
-
-  --secondary: #FFE45C;
-
-  /* ---------- Background ---------- */
-
-  --background: #FFFCF5;
-  --background-soft: #F3F0E8;
-  --background-white: #FFFFFF;
-
-  /* ---------- Dark Sections ---------- */
-
-  --dark: #111111;
-  --dark-soft: #171717;
-  --dark-card: #1D1D1D;
-
-  /* ---------- Text ---------- */
-
-  --text: #111111;
-  --text-secondary: rgba(17, 17, 17, 0.65);
-  --text-muted: rgba(17, 17, 17, 0.45);
-  --text-light: rgba(17, 17, 17, 0.3);
-
-  /* ---------- Dark Mode Text ---------- */
-
-  --dark-text: #FFFCF5;
-  --dark-text-secondary: rgba(255, 252, 245, 0.75);
-  --dark-text-muted: rgba(255, 252, 245, 0.5);
-  --dark-text-light: rgba(255, 252, 245, 0.3);
-
-  /* ---------- Borders ---------- */
-
-  --border: rgba(17, 17, 17, 0.1);
-  --border-strong: rgba(17, 17, 17, 0.2);
-
-  --dark-border: rgba(255, 255, 255, 0.1);
-  --dark-border-strong: rgba(255, 255, 255, 0.2);
-
-  /* ---------- Status Colors ---------- */
-
-  --success: #25D366;
-  --success-dark: #16A34A;
-
-  --danger: #EF4444;
-  --warning: #F59E0B;
-
-  /* ---------- Card Colors ---------- */
-
-  --card: #FFFFFF;
-  --card-soft: #F3F0E8;
-
-  --dark-card-bg: #171717;
-  --dark-card-soft: #1D1D1D;
-
-  /* ---------- Input Colors ---------- */
-
-  --input-bg: #FFFFFF;
-  --input-border: rgba(17, 17, 17, 0.1);
-
-  /* ---------- Shadows ---------- */
-
-  --shadow-small: 0 2px 10px rgba(0, 0, 0, 0.05);
-  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
-}
-
-
-/* ================================
-   DARK MODE
-================================ */
-
-.dark {
-  /* ---------- Main Colors ---------- */
-
-  --primary: #5B7CFF;
-  --primary-hover: #7690FF;
+  --primary: #108f10;
+  --primary-hover: #0bd80b;
 
   --secondary: #FFE45C;
 
@@ -104,21 +30,20 @@
   --text-secondary: rgba(255, 252, 245, 0.75);
   --text-muted: rgba(255, 252, 245, 0.5);
   --text-light: rgba(255, 252, 245, 0.3);
-
-  /* ---------- Dark Mode Text ---------- */
-
-  --dark-text: #111111;
-  --dark-text-secondary: rgba(17, 17, 17, 0.7);
-  --dark-text-muted: rgba(17, 17, 17, 0.45);
-  --dark-text-light: rgba(17, 17, 17, 0.3);
+  --tracking-wide: 0.025em;
 
   /* ---------- Borders ---------- */
 
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.2);
 
-  --dark-border: rgba(17, 17, 17, 0.1);
-  --dark-border-strong: rgba(17, 17, 17, 0.2);
+  /* ---------- Status Colors ---------- */
+
+  --success: #25D366;
+  --success-dark: #16A34A;
+
+  --danger: #EF4444;
+  --warning: #F59E0B;
 
   /* ---------- Card Colors ---------- */
 
@@ -152,9 +77,6 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
 }
 
 
@@ -182,10 +104,14 @@ body {
 
 .cinemathic-text {
   color: var(--text);
+  font-family: "Mathematical Sans-serif";
+  font-weight: bolder;
+  letter-spacing: var(--tracking-wide) /* 0.025em */;
 }
 
 .cinemathic-text-secondary {
   color: var(--text-secondary);
+  font-weight: 400;
 }
 
 .cinemathic-text-muted {
@@ -214,11 +140,6 @@ body {
   color: #FFFCF5;
 }
 
-.dark .cinemathic-dark {
-  background-color: #F3F0E8;
-  color: #111111;
-}
-
 
 /* ================================
    DARK CARD
@@ -230,12 +151,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.dark .cinemathic-dark-card {
-  background-color: #FFFFFF;
-  color: #111111;
-  border-color: rgba(17, 17, 17, 0.1);
-}
-
 
 /* ================================
    BUTTON
@@ -244,7 +159,7 @@ body {
 .cinemathic-button {
   background-color: var(--primary);
   color: #FFFFFF;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .cinemathic-button:hover {
@@ -298,13 +213,13 @@ body {
 /* ================================
    SELECTION
 ================================ */
+
 ::selection {
-  background-color: yellow;
-  color: black; 
+  background-color: var(--primary);
+  color: #FFFFFF;
 }
 
-
 ::-moz-selection {
-  background-color: yellow;
-  color: black;
+  background-color: var(--primary);
+  color: #FFFFFF;
 }

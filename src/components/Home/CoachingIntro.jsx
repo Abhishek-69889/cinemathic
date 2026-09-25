@@ -1,50 +1,27 @@
-import React from "react";
+import React from 'react'
 
 const CoachingIntro = () => {
   return (
     <section
       id="about"
-      className="w-full bg-[var(--background)] text-[var(--text)] transition-colors"
+      className="w-full bg-[var(--background)] text-[var(--text)]"
     >
-      <div className="max-w-312.5 mx-auto px-5 sm:px-8  lg:px-2 pt-16 sm:pt-20 lg:pt-24 pb-14 lg:pb-16 grid grid-cols-1 lg:grid-cols-[1fr_0.98fr] gap-12 lg:gap-16 items-center">
+      <div className="max-w-312.5 mx-auto px-5 sm:px-8 lg:px-2 pt-16 sm:pt-20 lg:pt-20 pb-14 lg:pb-16 grid grid-cols-1 lg:grid-cols-[1fr_0.98fr] gap-12 lg:gap-16 items-center">
 
-        {/* ================= LEFT CONTENT ================= */}
+        {/* Left Content */}
         <div className="max-w-155">
 
-          {/* Heading */}
-          <h1
-            className="
-              serif
-              text-[54px]
-              sm:text-[68px]
-              md:text-[76px]
-              lg:text-[82px]
-              leading-[0.88]
-              tracking-[-0.045em]
-              font-normal
-            "
-          >
+          <h1 className="cinamathic-text text-[54px] sm:text-[68px] md:text-[76px] lg:text-[82px] leading-[0.88] tracking-wide font-extrabold">
             Maths, taught
             <br />
             like <span className="italic">a story.</span>
           </h1>
 
-          {/* Description */}
-          <p
-            className="
-              inter
-              mt-7
-              max-w-140
-              text-[16px]
-              sm:text-[17px]
-              lg:text-[18px]
-              leading-[1.6]
-              text-[var(--text-secondary)]
-            "
-          >
-            Cinemathic is not a tuition. It's where formulas become
-            intuition, and problems become second nature. For Class 9–12,
-            JEE, and Olympiads.
+          <p className="inter mt-7 max-w-140 text-[16px] sm:text-[17px] lg:text-[18px] leading-[1.6] text-[var(--text-secondary)]">
+            <span className='text-green-700 font-bold tracking-wide italic'>Don't memorise maths. Understand the plot!!</span>
+            <br />
+            Cinemathic is where confused students become confident problem-solvers. Clear concepts, sharp thinking and a teaching style that shows you exactly where to focus.
+            For Class 9-12, JEE and Olympiads.
           </p>
 
           {/* CTA */}
@@ -52,16 +29,7 @@ const CoachingIntro = () => {
 
             <a
               href="#live"
-              className="
-                inline-flex items-center justify-center gap-3
-                cinemathic-button
-                px-6 sm:px-7
-                py-3.5
-                rounded-full
-                text-[14px]
-                font-medium
-                transition
-              "
+              className="inline-flex items-center justify-center gap-3 cinemathic-button px-6 sm:px-7 py-3.5 rounded-full text-[14px] font-medium"
             >
               Join Live Class
 
@@ -72,18 +40,7 @@ const CoachingIntro = () => {
 
             <a
               href="#tests"
-              className="
-                inline-flex items-center justify-center
-                border cinemathic-border
-                bg-[var(--card)]
-                px-6 sm:px-7
-                py-3.5
-                rounded-full
-                text-[14px]
-                font-medium
-                transition
-                hover:border-[var(--primary)]
-              "
+              className="inline-flex items-center justify-center border cinemathic-border bg-[var(--card)] px-6 sm:px-7 py-3.5 rounded-full text-[14px] font-medium hover:border-[var(--primary)] transition"
             >
               Take Test
             </a>
@@ -91,17 +48,8 @@ const CoachingIntro = () => {
           </div>
 
           {/* Stats */}
-          <div
-            className="
-              mt-12
-              pt-6
-              border-t cinemathic-border
-              grid grid-cols-3
-              max-w-135
-            "
-          >
+          <div className="mt-12 pt-6 border-t cinemathic-border grid grid-cols-3 max-w-135">
 
-            {/* Students */}
             <div className="pr-4">
               <div className="serif text-[27px] sm:text-[30px]">
                 200+
@@ -109,11 +57,11 @@ const CoachingIntro = () => {
 
               <div className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
                 Students
-                <br className="sm:hidden" /> Mentored
+                <br className="sm:hidden" />
+                Mentored
               </div>
             </div>
 
-            {/* Selections */}
             <div className="px-4 border-l cinemathic-border">
               <div className="serif text-[27px] sm:text-[30px]">
                 98%
@@ -126,7 +74,6 @@ const CoachingIntro = () => {
               </div>
             </div>
 
-            {/* Experience */}
             <div className="pl-4 border-l cinemathic-border">
               <div className="serif text-[27px] sm:text-[30px]">
                 4 yrs
@@ -140,26 +87,15 @@ const CoachingIntro = () => {
             </div>
 
           </div>
+
         </div>
 
-        {/* ================= RIGHT BOARD ================= */}
+        {/* Right Board */}
         <div className="relative w-full">
 
-          {/* Main card */}
-          <div
-            className="
-              relative
-              w-full
-              rounded-[26px]
-              border cinemathic-border
-              bg-[var(--card)]
-              p-5 sm:p-7 lg:p-8
-              shadow-[var(--shadow-medium)]
-              transition-colors
-            "
-          >
+          {/* Main Card */}
+          <div className="relative w-full rounded-[26px] border cinemathic-border bg-[var(--card)] p-5 sm:p-7 lg:p-8 shadow-[var(--shadow-medium)]">
 
-            {/* Card header */}
             <div className="flex items-center justify-between mb-7">
 
               <span className="text-[9px] uppercase tracking-[0.14em] text-[var(--text-muted)]">
@@ -169,41 +105,16 @@ const CoachingIntro = () => {
             </div>
 
             {/* Graph */}
-            <div
-              className="
-                relative
-                h-71.25
-                sm:h-77.5
-                rounded-[17px]
-                border cinemathic-border
-                overflow-hidden
-                bg-[var(--background)]
-                transition-colors
-              "
-            >
+            <div className="relative h-71.25 sm:h-77.5 rounded-[17px] border cinemathic-border overflow-hidden bg-[var(--background)]">
 
-              {/* Yellow glow */}
-              <div
-                className="
-                  absolute
-                  -right-12
-                  -top-10
-                  w-64
-                  h-64
-                  rounded-full
-                  bg-[var(--secondary)]
-                  blur-[45px]
-                  opacity-80
-                "
-              />
+              {/* Yellow Glow */}
+              <div className="absolute -right-12 -top-10 w-64 h-64 rounded-full bg-white blur-[30px] opacity-20" />
 
-              {/* Graph SVG */}
               <svg
                 viewBox="0 0 500 300"
                 className="absolute inset-0 w-full h-full"
                 preserveAspectRatio="none"
               >
-
                 {/* Axes */}
                 <line
                   x1="80"
@@ -223,7 +134,7 @@ const CoachingIntro = () => {
                   strokeOpacity="0.12"
                 />
 
-                {/* Dashed vertical */}
+                {/* Dashed Vertical */}
                 <line
                   x1="285"
                   y1="40"
@@ -264,10 +175,9 @@ const CoachingIntro = () => {
                   stroke="currentColor"
                   strokeOpacity="0.1"
                 />
-
               </svg>
 
-              {/* Graph labels */}
+              {/* Graph Labels */}
               <span className="absolute left-[12%] top-[25%] text-[10px] text-[var(--text-light)]">
                 lim x→a f(x) = L
               </span>
@@ -284,44 +194,19 @@ const CoachingIntro = () => {
                 f continuous at a if limit exists
               </span>
 
-              {/* Arrow button */}
+              {/* Arrow Button */}
               <button
-                className="
-                  absolute
-                  right-4
-                  bottom-4
-                  w-8
-                  h-8
-                  rounded-full
-                  bg-[var(--text)]
-                  text-[var(--background)]
-                  text-[12px]
-                  grid
-                  place-items-center
-                  hover:bg-[var(--primary)]
-                  hover:text-white
-                  transition
-                "
+                className="absolute right-4 bottom-4 w-8 h-8 rounded-full bg-[var(--text)] text-[var(--background)] text-[12px] grid place-items-center hover:bg-[var(--primary)] hover:text-white transition"
               >
                 ↗
               </button>
 
             </div>
 
-            {/* Information boxes */}
+            {/* Information */}
             <div className="grid grid-cols-3 gap-3 mt-6">
 
-              <div
-                className="
-                  rounded-xl
-                  border cinemathic-border
-                  bg-[var(--background)]
-                  px-3
-                  py-3
-                  min-h-14.25
-                  transition-colors
-                "
-              >
+              <div className="rounded-xl border cinemathic-border bg-[var(--background)] px-3 py-3 min-h-14.25">
                 <div className="text-[8px] uppercase tracking-[0.15em] text-[var(--text-muted)]">
                   Topic
                 </div>
@@ -331,17 +216,7 @@ const CoachingIntro = () => {
                 </div>
               </div>
 
-              <div
-                className="
-                  rounded-xl
-                  border cinemathic-border
-                  bg-[var(--background)]
-                  px-3
-                  py-3
-                  min-h-14.25
-                  transition-colors
-                "
-              >
+              <div className="rounded-xl border cinemathic-border bg-[var(--background)] px-3 py-3 min-h-14.25">
                 <div className="text-[8px] uppercase tracking-[0.15em] text-[var(--text-muted)]">
                   Level
                 </div>
@@ -351,17 +226,7 @@ const CoachingIntro = () => {
                 </div>
               </div>
 
-              <div
-                className="
-                  rounded-xl
-                  border cinemathic-border
-                  bg-[var(--background)]
-                  px-3
-                  py-3
-                  min-h-14.25
-                  transition-colors
-                "
-              >
+              <div className="rounded-xl border cinemathic-border bg-[var(--background)] px-3 py-3 min-h-14.25">
                 <div className="text-[8px] uppercase tracking-[0.15em] text-[var(--text-muted)]">
                   Mode
                 </div>
@@ -375,33 +240,18 @@ const CoachingIntro = () => {
 
           </div>
 
-          {/* Floating yellow note */}
-          <div
-            className="
-              absolute
-              -bottom-6
-              left-[-18px]
-              sm:left-[-28px]
-              w-[155px]
-              sm:w-[165px]
-              rounded-xl
-              border cinemathic-border
-              bg-[var(--secondary)]
-              px-4
-              py-3
-              shadow-[var(--shadow-small)]
-              rotate-[-1.5deg]
-            "
-          >
+          {/* Floating Note */}
+          <div className="absolute -bottom-6 left-[-18px] sm:left-[-28px] w-[155px] sm:w-[165px] rounded-xl border cinemathic-border bg-[var(--secondary)] px-4 py-3 shadow-[var(--shadow-small)] rotate-[-1.5deg]">
             <p className="text-[11px] sm:text-[12px] leading-[1.3] font-medium text-[#111111]">
               "Every formula has a backstory. We start there."
             </p>
           </div>
 
         </div>
+
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CoachingIntro;
+export default CoachingIntro
