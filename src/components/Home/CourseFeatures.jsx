@@ -4,7 +4,7 @@ import features from '../../data/Features'
 
 const CourseFeatures = () => {
   return (
-    <section className="cinemathic-bg-soft">
+    <section id='features' className="cinemathic-bg-soft">
 
       <div className="max-w-[1220px] mx-auto px-5 sm:px-8 lg:px-2 py-14 sm:py-16 lg:py-20">
 

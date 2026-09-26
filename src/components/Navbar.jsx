@@ -16,20 +16,20 @@ const navLinks = [
     link: '#courses'
   },
   {
+    name: 'Features',
+    link: '#features'
+  },
+  {
     name: 'Gallery',
     link: '#gallery'
   },
   {
-    name: 'Class',
-    link: '#live'
-  },
-  {
-    name: 'Test',
-    link: '#tests'
-  },
-  {
     name: 'Reviews',
     link: '#reviews'
+  },
+  {
+    name: 'FAQ',
+    link: '#faq'
   }
 ]
 

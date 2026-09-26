@@ -8,17 +8,18 @@ import Contact from '../components/Home/Contact';
 import Courses from '../components/Home/Courses';
 import CourseFeatures from '../components/Home/CourseFeatures';
 import ClassGallery from '../components/Home/ClassGallery';
+import FAQ from '../components/Home/FAQ';
 
 export default function Home() {
 
 
   return (
-    <div className="min-h-screen bg-[#FFFCF5] text-[#121212] font-[Inter] selection:bg-[#2D5BFF] selection:text-white">
-      {/* <style>{`
+    <div className="min-h-screen  font-[Inter]">
+      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap');
         .serif { font-family: 'Instrument Serif', serif; }
         .inter { font-family: 'Inter', sans-serif; }
-      `}</style> */}
+      `}</style>
 
       {/* NAV */}
       <Navbar/>
@@ -37,13 +38,15 @@ export default function Home() {
         <ClassGallery/>
 
       {/* 4. CLASS LINK */}
-      <ClassSchedule/>
+      {/* <ClassSchedule/> */}
 
       {/* 5. TEST LINK */}
-      <TestSchedule/>
+      {/* <TestSchedule/> */}
 
       {/* 6. REVIEWS */}
       <Review/>
+
+      <FAQ/>
 
       {/* 7. CONTACT */}
       <Contact/>

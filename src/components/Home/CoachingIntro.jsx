@@ -6,7 +6,7 @@ const CoachingIntro = () => {
       id="about"
       className="w-full bg-[var(--background)] text-[var(--text)]"
     >
-      <div className="max-w-312.5 mx-auto px-5 sm:px-8 lg:px-2 pt-16 sm:pt-20 lg:pt-20 pb-14 lg:pb-16 grid grid-cols-1 lg:grid-cols-[1fr_0.98fr] gap-12 lg:gap-16 items-center">
+      <div className="max-w-312.5 mx-auto px-5 sm:px-8 lg:px-2 pt-16 sm:pt-20 lg:pt-19 pb-14 lg:pb-16 grid grid-cols-1 lg:grid-cols-[1fr_0.98fr] gap-12 lg:gap-16 items-center">
 
         {/* Left Content */}
         <div className="max-w-155">
