@@ -11,14 +11,14 @@ const ContactCard = ({ contact }) => {
       href={contact.link}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noreferrer' : undefined}
-      className="bg-[#1D1D1D] border border-white/10 text-[#FFFCF5] rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:scale-[1.01] transition"
+      className="cinemathic-card cinemathic-border cinemathic-text rounded-2xl p-5 flex flex-col justify-between min-h-[136px] hover:scale-[1.02] transition duration-500"
     >
       <div className="flex justify-between items-start">
-        <div className="text-[10px] uppercase tracking-[0.15em] text-white/40">
+        <div className="text-[10px] uppercase tracking-[0.15em] cinemathic-text-secondary">
           {contact.type}
         </div>
 
-        <div className="w-8 h-8 rounded-full bg-[var(--primary)] text-white grid place-items-center text-sm">
+        <div className="w-8 h-8 rounded-full bg-[var(--primary)] grid place-items-center text-sm">
           ↗
         </div>
       </div>
@@ -34,7 +34,7 @@ const ContactCard = ({ contact }) => {
           {contact.title}
         </div>
 
-        <div className="mt-1 text-[11px] text-white/40">
+        <div className="mt-1 text-[11px] cinemathic-text-secondary">
           {contact.details}
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeatureCard = ({ feature }) => {
   return (
-    <div className="cinemathic-card  rounded-2xl p-5">
+    <div className="cinemathic-card  rounded-2xl p-5 hover:scale-105 transition duration-500">
 
       <div className="text-2xl">
         {feature.icon}

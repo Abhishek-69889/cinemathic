@@ -4,7 +4,7 @@ import MentorIntro from '../components/Home/MentorIntro';
 import ClassSchedule from '../components/Home/ClassSchedule';
 import TestSchedule from '../components/Home/TestSchedule';
 import Review from '../components/Home/Review';
-import Contact from '../components/Home/Contact';
+import Footer from '../components/Home/Footer';
 import Courses from '../components/Home/Courses';
 import CourseFeatures from '../components/Home/CourseFeatures';
 import ClassGallery from '../components/Home/ClassGallery';
@@ -49,7 +49,8 @@ export default function Home() {
       <FAQ/>
 
       {/* 7. CONTACT */}
-      <Contact/>
+      <Footer/>
     </div>
   );
 }
+

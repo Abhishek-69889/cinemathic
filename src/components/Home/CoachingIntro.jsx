@@ -28,10 +28,10 @@ const CoachingIntro = () => {
           <div className="mt-8 flex flex-col xs:flex-row sm:flex-row gap-3">
 
             <a
-              href="#live"
+              href="#gallery"
               className="inline-flex items-center justify-center gap-3 cinemathic-button px-6 sm:px-7 py-3.5 rounded-full text-[14px] font-medium"
             >
-              Join Live Class
+              Explore classroom
 
               <span className="w-6 h-6 rounded-full bg-white/20 grid place-items-center text-[12px]">
                 →
@@ -39,10 +39,10 @@ const CoachingIntro = () => {
             </a>
 
             <a
-              href="#tests"
+              href="#courses"
               className="inline-flex items-center justify-center border cinemathic-border bg-[var(--card)] px-6 sm:px-7 py-3.5 rounded-full text-[14px] font-medium hover:border-[var(--primary)] transition"
             >
-              Take Test
+              Courses
             </a>
 
           </div>
