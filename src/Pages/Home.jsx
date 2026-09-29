@@ -1,14 +1,13 @@
 import Navbar from '../components/Navbar';
 import CoachingIntro from '../components/Home/CoachingIntro';
 import MentorIntro from '../components/Home/MentorIntro';
-import ClassSchedule from '../components/Home/ClassSchedule';
-import TestSchedule from '../components/Home/TestSchedule';
 import Review from '../components/Home/Review';
 import Footer from '../components/Home/Footer';
 import Courses from '../components/Home/Courses';
 import CourseFeatures from '../components/Home/CourseFeatures';
 import ClassGallery from '../components/Home/ClassGallery';
 import FAQ from '../components/Home/FAQ';
+import Scholarship from '../components/Home/Scholorship';
 
 export default function Home() {
 
@@ -21,35 +20,22 @@ export default function Home() {
         .inter { font-family: 'Inter', sans-serif; }
       `}</style>
 
-      {/* NAV */}
-      <Navbar/>
-
-      {/* 1. COACHING INTRO */}
-      <CoachingIntro/>
-
-      {/* 2. MENTOR INTRO */}
-      <MentorIntro/>
-
-      {/* 3.Courses */}
+      <header>
+        <Navbar/>
+      </header>
+      <main>
+        <CoachingIntro/>
+        <MentorIntro/>
         <Courses/>
-
+        <Scholarship/>
         <CourseFeatures/>
-
         <ClassGallery/>
-
-      {/* 4. CLASS LINK */}
-      {/* <ClassSchedule/> */}
-
-      {/* 5. TEST LINK */}
-      {/* <TestSchedule/> */}
-
-      {/* 6. REVIEWS */}
-      <Review/>
-
-      <FAQ/>
-
-      {/* 7. CONTACT */}
-      <Footer/>
+        <Review/>
+        <FAQ/>
+      </main>
+        <footer>
+          <Footer/>
+        </footer>
     </div>
   );
 }

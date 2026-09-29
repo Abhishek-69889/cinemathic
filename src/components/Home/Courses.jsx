@@ -1,6 +1,7 @@
 import React from 'react'
 import CourseCard from '../cards/CourseCard'
 import courses from '../../data/Courses'
+import ScholarshipCard from '../cards/ScholorshipCard'
 
 const Courses = () => {
   return (

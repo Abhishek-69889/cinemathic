@@ -11,8 +11,8 @@ const Review = () => {
       <div className="max-w-[1220px] mx-auto px-5 sm:px-8 lg:px-2 py-20">
 
         <div>
-          <h2 className="cinemathic-text text-[48px] sm:text-[60px] leading-none">
-            Words From Students
+          <h2 className="cinemathic-text text-[48px] sm:text-[40px] lg:text-[48px] leading-none">
+            From Goal to Growth: Their Stories
           </h2>
         </div>
 

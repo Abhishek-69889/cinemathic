@@ -24,7 +24,7 @@ const ReviewCard = ({ review }) => {
         </div>
 
         <div className="mt-1 text-[14px] font-semibold">
-          {review.board}
+          Class {review.className}
         </div>
 
         <div className="mt-1 text-[13px] text-white/60">

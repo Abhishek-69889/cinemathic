@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from "../assets/images/cm.png"
 
-// Navbar links
+
 const navLinks = [
   {
     name: 'About',
@@ -14,6 +14,10 @@ const navLinks = [
   {
     name: 'Courses',
     link: '#courses'
+  },
+  {
+    name: 'Scholarship',
+    link: '#scholarship'
   },
   {
     name: 'Features',
@@ -75,17 +79,27 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] uppercase tracking-[0.14em]">
 
-          {navLinks.map((item, index) => (
+              {navLinks.map((item, index) => (
 
-            <a
-              key={index}
-              href={item.link}
-              className="cinemathic-link whitespace-nowrap tracking-wider font-semibold"
-            >
-              {item.name}
-            </a>
+                <a
+                  key={index}
+                  href={item.link}
+                  className={`relative  whitespace-nowrap tracking-wider font-semibold ${
+                    item.name === 'Scholarship'
+                      ? 'text-[#FFE45C]'
+                      : 'cinemathic-link'
+                  }`}
+                  >
+                  {item.name}
 
-          ))}
+                  {item.name === 'Scholarship' && (
+                    <span className="absolute -top-4 -right-3 text-[7px] tracking-normal font-bold bg-[#FFE45C] text-[#111111] px-1.5 py-0.5 rounded-full animate-pulse">
+                      75%
+                    </span>
+                  )}
+                </a>
+
+              ))}
 
           {/* Contact */}
           <a
@@ -123,18 +137,28 @@ const Navbar = () => {
 
               {navLinks.map((item, index) => (
 
-                <a
-                  key={index}
-                  href={item.link}
-                  onClick={closeMenu}
-                  className={`py-3 sm:py-3.5 cinemathic-link cinemathic-border tracking-wider font-semibold ${
-                    index !== navLinks.length - 1 ? 'border-b' : ''
-                  }`}
-                >
-                  {item.name}
-                </a>
+              <a
+                key={index}
+                href={item.link}
+                onClick={closeMenu}
+                className={`py-3 sm:py-3.5 cinemathic-link cinemathic-border tracking-wider font-semibold flex items-center gap-2 ${
+                  index !== navLinks.length - 1 ? 'border-b' : ''
+                } ${
+                  item.name === 'Scholarship'
+                    ? 'text-[#FFE45C]'
+                    : ''
+                }`}
+              >
+                {item.name}
 
-              ))}
+                {item.name === 'Scholarship' && (
+                  <span className="text-[7px] tracking-normal font-bold bg-[#FFE45C] text-[#111111] px-1.5 py-0.5 rounded-full animate-pulse">
+                    75%
+                  </span>
+                )}
+              </a>
+
+            ))}
 
               {/* Contact */}
               <a
