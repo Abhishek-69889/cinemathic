@@ -9,6 +9,9 @@ import adityaPrajapati from '../assets/images/students/aditya_prajapati.jpeg'
 import shubham from '../assets/images/students/shubham.jpeg'
 import anshitaVijay from '../assets/images/students/anshita_vijay.jpeg'
 import anshikaRai from '../assets/images/students/anshika_rai.jpeg'
+import advitchib from '../assets/images/students/advit_chib.jpeg'
+import aarjavTiwari from '../assets/images/students/aarjavTiwari.jpeg'
+
 
 const reviews = [
   {
@@ -130,6 +133,30 @@ const reviews = [
     hometown: 'Kota, Rajasthan',
     quote:
       'Being a student of CINEMATHIC’s very first batch has honestly been such a great experience! ❤️ Badal Sir’s way of teaching made Maths so much easier and actually enjoyable. His guidance helped me score 95 in my Class 10 Boards, and I’m genuinely so grateful to be a part of CINEMATHIC! ✨'
+  },
+  {
+    id: 12,
+    image: advitchib,
+    name: 'Advit Chib',
+    score: '99/100 in Mathematics',
+    board: 'CBSE Board',
+    className: '10',
+    school: 'Army Public School, Udhampur',
+    hometown: 'Udhampur, Rajasthan',
+    quote:
+      'Learning through cinemathic has been a wonderful experience, Ritik sir teaches with all his heart and a lot of personal attention is received here which makes the academic growth a lot better'
+  },
+  {
+    id: 13,
+    image: aarjavTiwari,
+    name: 'Aarjav Tiwari ',
+    score: '96/100 in Mathematics',
+    board: 'CBSE Board',
+    className: '10',
+    school: 'Army Public School, Udhampur',
+    hometown: 'Udhampur, Rajasthan',
+    quote:
+      'Ritik sir is the best teacher in the world his way of teaching difficult concepts is a gift only a few have. He has a way to connect with the students and his way of teaching is very immersive. I have had a wonderful experience with CINEMATHIC'
   }
 ]
 
